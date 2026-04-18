@@ -2,36 +2,123 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر جمالك - أدوات التجميل</title>
     <link rel="stylesheet" href="style.css">
-    <title>متجر الجمال - Glow & Bloom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">Glow & Bloom</div>
-        <nav>
-            <a href="#">الرئيسية</a>
-            <a href="#">المكياج</a>
-            <span id="cart-counter" style="color:white; font-weight:bold;">السلة (0)</span>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-spa"></i> جمالك</h1>
+                <p>متجر أدوات التجميل</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="cart.html">سلة التسوق</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
     </header>
 
-    <main class="product-container">
-        <div class="product-card">
-            <h3>أحمر شفاه كلاسيك</h3>
-            <p>السعر: 50 جنيه</p>
-            <button onclick="addToCart()">إضافة للسلة</button>
-        </div>
-        <div class="product-card">
-            <h3>كريم أساس طبيعي</h3>
-            <p>السعر: 120 جنيه</p>
-            <button onclick="addToCart()">إضافة للسلة</button>
-        </div>
-        <div class="product-card">
-            <h3>عطر الزهور المنعش</h3>
-            <p>السعر: 200 جنيه</p>
-            <button onclick="addToCart()">إضافة للسلة</button>
-        </div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>أدوات تجميل احترافية</h2>
+                    <p>اكتشفي أحدث أدوات التجميل بجودة عالية وأسعار مميزة بالجنيه المصري</p>
+                    <a href="products.html" class="btn btn-primary">تسوقي الآن</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">لماذا تختارين جمالك؟</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>توصيل سريع</h3>
+                        <p>توصيل مجاني للطلبات فوق 500 جنيه</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>منتجات أصلية</h3>
+                        <p>ضمان الجودة والأصالة</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-undo-alt"></i>
+                        <h3>استرجاع مجاني</h3>
+                        <p>استرجاع خلال 14 يوم</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>دعم 24/7</h3>
+                        <p>فريق دعم متكامل</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">منتجات مميزة</h2>
+                <div class="products-grid" id="featured-products"></div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h3>اشتركي في النشرة البريدية</h3>
+                <p>احصلي على أحدث العروض والخصومات</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="بريدك الإلكتروني" required>
+                    <button type="submit" class="btn btn-primary">اشتراك</button>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>جمالك</h4>
+                    <p>أفضل متجر لأدوات التجميل في مصر والشرق الأوسط</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="cart.html">سلة التسوق</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعينا</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 جمالك. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
