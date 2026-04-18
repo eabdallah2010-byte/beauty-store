@@ -2,41 +2,34 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر الجمال - Glow & Bloom</title>
     <link rel="stylesheet" href="style.css">
+    <title>متجر الجمال - Glow & Bloom</title>
 </head>
 <body>
-
     <header>
         <div class="logo">Glow & Bloom</div>
         <nav>
-            <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">المكياج</a></li>
-                <li><a href="#">العناية بالبشرة</a></li>
-            </ul>
+            <a href="#">الرئيسية</a>
+            <a href="#">المكياج</a>
+            <span id="cart-counter" style="color:white; font-weight:bold;">السلة (0)</span>
         </nav>
     </header>
 
-    <main>
-        <h2 style="text-align: center; margin-top: 20px;">أحدث المنتجات</h2>
-        <div id="product-list" class="product-container">
-            <div class="product-card">
-                <h3>أحمر شفاه كلاسيك</h3>
-                <p>السعر: 50 جنيه</p>
-                <button>إضافة للسلة</button>
-            </div>
-            <div class="product-card">
-                <h3>كريم أساس طبيعي</h3>
-                <p>السعر: 120 جنيه</p>
-                <button>إضافة للسلة</button>
-            </div>
-            <div class="product-card">
-                <h3>عطر الزهور المنعش</h3>
-                <p>السعر: 200 جنيه</p>
-                <button>إضافة للسلة</button>
-            </div>
+    <main class="product-container">
+        <div class="product-card">
+            <h3>أحمر شفاه كلاسيك</h3>
+            <p>السعر: 50 جنيه</p>
+            <button onclick="addToCart()">إضافة للسلة</button>
+        </div>
+        <div class="product-card">
+            <h3>كريم أساس طبيعي</h3>
+            <p>السعر: 120 جنيه</p>
+            <button onclick="addToCart()">إضافة للسلة</button>
+        </div>
+        <div class="product-card">
+            <h3>عطر الزهور المنعش</h3>
+            <p>السعر: 200 جنيه</p>
+            <button onclick="addToCart()">إضافة للسلة</button>
         </div>
     </main>
 
